@@ -1,0 +1,126 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: #A85CF9;
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+  color: unset;
+}
+
+:root{
+  --primary: #A85CF9;
+  --secondary: #5534A5;
+  --mid-light-blue: #6FDFDF;
+  --light-blue: #4B7BE5;
+}
+
+.tictactoe__wrapper{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #000000c4;
+}
+
+.tictactoe__board{
+  width: 450px;
+  height: 450px;
+  background: #ffeb3b;
+  /* border-radius: 10px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.tictactoe__board__items{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #009688;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.tictactoe__board__items:hover{
+  transition: 0.3s ease-in-out;
+  box-shadow: inset 0px 0px 10px 3px #000;
+}
+
+.tictactoe__board__icon{
+  font-size: 40px;
+  color: #007aff;
+}
+
+.movesAndWinner{
+  width: 450px;
+  height: 80px;
+  text-align: center;
+  background-color: #03e3ce;
+  margin-top: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.winnerName{
+  font-size: 30px;
+  color: #0d143a;
+}
+
+.closeGame{
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: #ff3636;
+}
+
+.reloadGame{
+  top: 90px;
+  font-size: 40px;
+  color: #ffc936;
+}
+
+.gameInfo{
+  top: 140px;
+  font-size: 30px;
+  color: #03e3ce;
+}
+
+.upDownBoxShadow{
+  transition: ease-in-out;
+  animation: upDownShadow 1.5s infinite;
+}
+
+
+@keyframes upDownShadow {
+  0%{
+    box-shadow: none;
+  }
+  50%{
+    box-shadow: inset 0px 0px 10px  #000;
+  }
+  100%{
+    box-shadow: none;
+  }
+}
