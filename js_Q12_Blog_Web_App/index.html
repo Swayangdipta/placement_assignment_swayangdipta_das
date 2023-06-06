@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog Web App</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="header_title">Blog App</h1>
+        <button class="create_btn" onclick="openCreateForm(true)">Create</button>
+    </div>
+
+    <div class="form_container" id="form_container">
+        <button class="close_form_btn" onclick="openCreateForm(false)">Close</button>
+        <form action="Javascript:void" onsubmit="createPost(event)">
+            <label for="title">Title</label>
+            <input type="text" class="inputs" placeholder="Title of the blog."/>
+
+            <label for="body">Body</label>
+            <textarea rows="30" cols="30" type="text" class="inputs" placeholder="Write blog here."></textarea>
+
+            <button class="blog_create_btn">Create</button>
+        </form>
+    </div>
+
+
+    <div id="container">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

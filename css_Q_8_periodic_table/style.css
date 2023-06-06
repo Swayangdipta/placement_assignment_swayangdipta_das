@@ -1,0 +1,60 @@
+.periodic-table {
+    width: 95vw;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr); /* Adjust column count as needed */
+    gap: 5px;
+  }
+  
+  .periodic-row {
+    display: grid;
+    grid-template-columns: repeat(19, 1fr); /* Adjust column count as needed */
+    gap: 10px;
+  }
+
+ 
+  
+  .element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+  } 
+  
+  .title{
+    font-size: 12px;
+  }
+  
+  /* Example element styles */
+  .red {
+    background-color: #ff4000;
+  }
+
+  .yellow{
+    background-color: rgb(255, 255, 59);
+  }
+
+  .blue{
+    background-color: rgb(58, 58, 255);
+  }
+
+  .green{
+    background-color: rgb(50, 255, 50);
+  }
+
+  .relative{
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .before{
+    position: absolute;
+    left: -8px;
+    display: flex;
+    flex-direction: column;
+  }
